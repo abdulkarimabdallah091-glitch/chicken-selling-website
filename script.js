@@ -15,14 +15,14 @@
 
     // ----- PRODUCT DATA (with kg ranges & categories) -----
     const products = [
-      { id: 1, name: 'Free-range eggs', price: 6.90, category: 'eggs', kg: '1 doz', badge: 'organic', img: 'images/yai3.jpeg' },
-      { id: 2, name: 'Whole chicken', price: 14.50, category: 'chicken', kg: '1.2–1.8 kg', badge: 'free-range', img: 'images/kuku2.jpeg' },
-      { id: 3, name: 'Chicken breast', price: 11.20, category: 'breast', kg: '0.8–1.2 kg', badge: 'boneless', img: 'images/kuku3.jpeg' },
-      { id: 4, name: 'Egg carton (30 pcs)', price: 9.90, category: 'family', kg: '30 pcs', badge: 'family pack', img: 'images/yai3.jpeg' },
-      { id: 5, name: 'Chicken thighs', price: 12.30, category: 'chicken', kg: '1.0–1.5 kg', badge: 'skin-on', img: 'images/kuku5.jpeg' },
-      { id: 6, name: 'Organic eggs (6 pack)', price: 4.50, category: 'eggs', kg: '6 pcs', badge: 'organic', img: 'images/yai4.jpeg' },
-      { id: 7, name: 'Chicken wings', price: 9.80, category: 'chicken', kg: '0.9–1.2 kg', badge: 'party pack', img: 'images/kuku7.jpeg' },
-      { id: 8, name: 'Family chicken pack', price: 28.90, category: 'family', kg: '2.5–3.2 kg', badge: 'best value', img: 'images/kuku8.jpeg' },
+      { id: 1, name: 'Free-range eggs', price: 6.90, category: 'eggs', kg: '1 doz', badge: 'organic', img: 'yai3.jpeg' },
+      { id: 2, name: 'Whole chicken', price: 14.50, category: 'chicken', kg: '1.2–1.8 kg', badge: 'free-range', img: 'kuku2.jpeg' },
+      { id: 3, name: 'Chicken breast', price: 11.20, category: 'breast', kg: '0.8–1.2 kg', badge: 'boneless', img: 'kuku3.jpeg' },
+      { id: 4, name: 'Egg carton (30 pcs)', price: 9.90, category: 'family', kg: '30 pcs', badge: 'family pack', img: 'yai3.jpeg' },
+      { id: 5, name: 'Chicken thighs', price: 12.30, category: 'chicken', kg: '1.0–1.5 kg', badge: 'skin-on', img: 'kuku5.jpeg' },
+      { id: 6, name: 'Organic eggs (6 pack)', price: 4.50, category: 'eggs', kg: '6 pcs', badge: 'organic', img: 'yai4.jpeg' },
+      { id: 7, name: 'Chicken wings', price: 9.80, category: 'chicken', kg: '0.9–1.2 kg', badge: 'party pack', img: 'kuku7.jpeg' },
+      { id: 8, name: 'Family chicken pack', price: 28.90, category: 'family', kg: '2.5–3.2 kg', badge: 'best value', img: 'kuku8.jpeg' },
     ];
 
     // ----- RENDER PRODUCTS -----
