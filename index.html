@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ★ SEO OPTIMIZATION ★ -->
+  
+  <meta name="description" content="Order fresh free-range chicken and organic eggs with free delivery anywhere. Farm-to-table quality, same-day delivery. Shop now!">
+  <meta name="keywords" content="fresh chicken, free-range eggs, organic chicken, egg delivery, chicken delivery, farm fresh, free delivery">
+  <title>Cluck & Co. · Fresh Free-Range Chicken & Eggs Delivery</title>
+  <link rel="canonical" href="https://cluckco.com/" />
+  <link rel="stylesheet" href="css/styles.css"/>
+  
+  <!-- Open Graph / Social SEO -->
+  <meta property="og:title" content="Cluck & Co. · Fresh Free-Range Chicken & Eggs Delivery" />
+  <meta property="og:description" content="Farm-fresh chicken and organic eggs delivered free to your door. Same-day delivery available." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://cluckco.com/" />
+  <meta property="og:image" content="https://cluckco.com/images/og-image.jpg" />
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Cluck & Co. · Fresh Free-Range Chicken & Eggs Delivery" />
+  <meta name="twitter:description" content="Farm-fresh chicken and organic eggs delivered free to your door. Same-day delivery available." />
+  
+  
+
+  <!-- Font Awesome 6 (free) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  
+</head>
+<body>
+<div class="app">
+
+  <!-- HEADER -->
+  <header class="header" role="banner">
+    <div class="logo" aria-label="Cluck & Co. home"><i class="fas fa-drumstick-bite" aria-hidden="true"></i> Cluck<span>&</span>Co.</div>
+    <div class="header-actions">
+      <span class="delivery-badge"><i class="fas fa-truck-fast" aria-hidden="true"></i> free delivery</span>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark or light mode"><i class="fas fa-moon" id="themeIcon" aria-hidden="true"></i> <span id="themeLabel">Dark</span></button>
+      <div class="cart-icon-wrap" id="cartIcon" role="button" aria-label="Open shopping cart" tabindex="0">
+        <i class="fas fa-shopping-bag" aria-hidden="true"></i>
+        <span class="cart-count" id="cartCount" aria-label="Cart items">0</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="hero-content">
+      <h1 id="hero-title">Farm fresh <br><span class="highlight">chicken</span> & <span class="highlight">eggs</span></h1>
+      <p>Straight from the coop to your door. Free delivery anywhere, every day.</p>
+      <div class="hero-cta">
+        <button class="btn" id="orderNowBtn"><i class="fas fa-shopping-basket" aria-hidden="true"></i> Order now</button>
+        <button class="btn btn-outline" id="learnMoreBtn"><i class="fas fa-circle-info" aria-hidden="true"></i> Learn more</button>
+      </div>
+    </div>
+    <div class="hero-image" aria-hidden="true">
+<img src="images/kuku3.jpeg" alt="Fresh chicken and eggs" onerror="this.style.display='none'; this.parentElement.innerHTML='🐔 🥚'" />
+    </div>
+  </section>
+
+  <!-- CATEGORY FILTER -->
+  <nav class="category-filter" aria-label="Product categories">
+    <button class="category-btn active" data-category="all">All</button>
+    <button class="category-btn" data-category="eggs">Eggs</button>
+    <button class="category-btn" data-category="chicken">Chicken</button>
+    <button class="category-btn" data-category="breast">Breast</button>
+    <button class="category-btn" data-category="family">Family packs</button>
+  </nav>
+
+  <!-- PRODUCT GRID -->
+  <section aria-labelledby="products-title">
+    <h2 id="products-title" class="section-title"><i class="fas fa-store" aria-hidden="true"></i> Our selection</h2>
+    <div class="product-grid" id="productGrid"></div>
+  </section>
+
+  <!-- DELIVERY BANNER -->
+  <div class="delivery-banner" role="note">
+    <span><i class="fas fa-truck-fast" aria-hidden="true"></i> Free delivery anywhere</span>
+    <span style="font-weight:500;"><i class="fas fa-check-circle" aria-hidden="true"></i> Order before 2pm for same-day delivery</span>
+  </div>
+
+  <!-- TESTIMONIALS SLIDER (auto) -->
+  <section aria-labelledby="testimonials-title">
+    <h2 id="testimonials-title" class="section-title"><i class="fas fa-comment-dots" aria-hidden="true"></i> What our customers say</h2>
+    <div class="testimonial-slider-container">
+      <div class="testimonial-track" id="testimonialTrack">
+        <div class="testimonial-slide">
+          <div class="stars">★★★★★</div>
+          "The freshest eggs I've ever tasted! Delivered right on time. Absolutely love the quality."
+          <div class="author">— Maria S.</div>
+        </div>
+        <div class="testimonial-slide">
+          <div class="stars">★★★★★</div>
+          "My family loves the free-range chicken. Juicy, full of flavor, and always on time."
+          <div class="author">— James K.</div>
+        </div>
+        <div class="testimonial-slide">
+          <div class="stars">★★★★★</div>
+          "Reliable service and great quality. Highly recommend to anyone looking for fresh poultry."
+          <div class="author">— Linda T.</div>
+        </div>
+        <div class="testimonial-slide">
+          <div class="stars">★★★★★</div>
+          "Best chicken delivery in town! The free delivery makes it even better."
+          <div class="author">— Robert M.</div>
+        </div>
+      </div>
+      <div class="slider-dots" id="sliderDots"></div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section aria-labelledby="faq-title">
+    <h2 id="faq-title" class="section-title"><i class="fas fa-question-circle" aria-hidden="true"></i> Frequently asked questions</h2>
+    <div class="faq-grid" id="faqGrid">
+      <div class="faq-item"><h4>How fresh is the chicken? <i class="fas fa-chevron-down" aria-hidden="true"></i></h4><div class="answer">Our chicken is sourced daily from local farms and delivered fresh, never frozen.</div></div>
+      <div class="faq-item"><h4>Do you deliver on weekends? <i class="fas fa-chevron-down" aria-hidden="true"></i></h4><div class="answer">Yes! We deliver 7 days a week, including weekends and public holidays.</div></div>
+      <div class="faq-item"><h4>What areas do you cover? <i class="fas fa-chevron-down" aria-hidden="true"></i></h4><div class="answer">We deliver anywhere in the city and surrounding suburbs. Free delivery!</div></div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section aria-labelledby="contact-title">
+    <h2 id="contact-title" class="section-title"><i class="fas fa-envelope" aria-hidden="true"></i> Get in touch</h2>
+    <div class="contact-section">
+      <div class="contact-info">
+        <p><i class="fas fa-phone" aria-hidden="true"></i> +1 (555) 123-4567</p>
+        <p><i class="fas fa-envelope" aria-hidden="true"></i> hello@cluckco.com</p>
+        <p><i class="fas fa-map-pin" aria-hidden="true"></i> 123 Farmstead Lane, Freshville</p>
+      </div>
+      <div class="contact-form">
+        <input type="text" placeholder="Your name" id="contactName" aria-label="Your name" />
+        <input type="email" placeholder="Your email" id="contactEmail" aria-label="Your email address" />
+        <textarea placeholder="Your message..." id="contactMsg" aria-label="Your message"></textarea>
+        <button class="btn" id="contactSendBtn"><i class="fas fa-paper-plane" aria-hidden="true"></i> Send message</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer" role="contentinfo">
+    <span>© 2026 Cluck & Co. — fresh from the farm</span>
+    <div class="social">
+      <i class="fab fa-instagram" aria-label="Instagram"></i>
+      <i class="fab fa-facebook" aria-label="Facebook"></i>
+      <i class="fab fa-twitter" aria-label="Twitter"></i>
+    </div>
+  </footer>
+</div>
+
+<!-- CART SIDEBAR -->
+<div class="cart-overlay" id="cartOverlay" role="button" aria-label="Close cart"></div>
+<div class="cart-panel" id="cartPanel" role="dialog" aria-label="Shopping cart">
+  <h2>Your cart <button class="close-cart" id="closeCart" aria-label="Close cart"><i class="fas fa-times" aria-hidden="true"></i></button></h2>
+  <div class="cart-items" id="cartItems"><div class="empty-cart">🐔 Your cart is empty</div></div>
+  <div class="cart-total"><span>Total</span><span id="cartTotalPrice">$0.00</span></div>
+  <button class="checkout-btn" id="checkoutBtn"><i class="fas fa-lock" aria-hidden="true"></i> Checkout</button>
+</div>
+
+<!-- TOAST -->
+<div id="toast" class="toast" role="alert" aria-live="polite"><i class="fas fa-check-circle" aria-hidden="true"></i> <span id="toastMessage">Added!</span></div>
+<script src="js/script.js"></script>
+</body>
+</html>
